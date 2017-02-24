@@ -40,7 +40,7 @@ See that there is a mutation that lived (i.e. no test failed after the code was 
 ### What to do
 * Uncomment the `testBoundary` test method in `SimpleNumberIsPositiveTest.java`
 * Run `testBoundaryMutations.sh`
-This time, you will see that all mutations were killed, as the `testBoundary` test failed then the `isPositive` method was mutated.
+This time, you will see that all mutations were killed, as the `testBoundary` test failed when the `isPositive` method was mutated.
 
 Demo 2
 ------
