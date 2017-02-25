@@ -57,7 +57,7 @@ Should it be run as part of my CI build?
 ========================================
 No, not yet.  While mutation testing is very useful and would be beneficial as part of a CI build, it can have some drawbacks.
 
-Mutation testing is a computationally expensive process and can take quite some time depending on the size of your codebase and the quality and speed of your test suite. PIT (*the mutation testing framework used in this project*) is fast compared to other mutation testing systems, but that can still mean that things will take a while.
+Mutation testing is a computationally expensive process and can take quite some time depending on the size of your codebase and the quality and speed of your test suite. PIT (*the mutation testing framework used in this project*) is fast compared to other mutation testing systems, and also has `withHistory` and `scmMutationCoverage` goals which can run the mutation tests on new code only, improving execution times.
 
 There is also the (rare) possibility false positives.  It is possible that certain mutations don't actually change the behaviour of the code, and the mutation testing framework incorrectly expects that a unit test should fail.  This is called an equivalent mutation.
 
