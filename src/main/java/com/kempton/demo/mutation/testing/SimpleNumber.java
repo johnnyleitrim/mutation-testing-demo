@@ -23,7 +23,6 @@ public class SimpleNumber {
 		if (incrememter != null) {
 			return incrememter.increment(this);
 		}
-
 		return this;
 	}
 
@@ -32,7 +31,6 @@ public class SimpleNumber {
 		if (value == 1 && otherNumber.value == 1) {
 			return new SimpleNumber(value * otherNumber.value);
 		}
-
 		return this;
 	}
 }

@@ -20,18 +20,12 @@ public class SimpleNumberIncrememterTest {
 	@Test
 	public void testIncrementer() {
 		SimpleNumber number = new SimpleNumber(-1);
-
 		Incrememter mockIncrememter = createStrictMock(Incrememter.class);
-
 		SimpleNumber expectedIncrementedNumber = new SimpleNumber(2);
 		expect(mockIncrememter.increment(number)).andReturn(expectedIncrementedNumber);
-
 		replay(mockIncrememter);
-
 		SimpleNumber actualIncrementedNumber = number.increment(mockIncrememter);
-
 		verify(mockIncrememter);
-
 		/* Uncomment this line to ensure the mutation testing passed */
 //		assertEquals(expectedIncrementedNumber, actualIncrementedNumber);
 	}
