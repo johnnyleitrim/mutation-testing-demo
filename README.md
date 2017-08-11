@@ -2,6 +2,7 @@ Mutation Testing Demo
 =====================
 
 [![Build Status](https://travis-ci.org/johnnyleitrim/mutation-testing-demo.svg?branch=master)](https://travis-ci.org/johnnyleitrim/mutation-testing-demo)
+[![Coverage Status](https://coveralls.io/repos/github/johnnyleitrim/mutation-testing-demo/badge.svg)](https://coveralls.io/github/johnnyleitrim/mutation-testing-demo)
 
 A quick description of mutation testing and examples using [PIT](http://pitest.org/)
 

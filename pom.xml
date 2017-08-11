@@ -17,6 +17,7 @@
 		<easymock.version>3.3.1</easymock.version>
 		<pitest.version>1.1.11</pitest.version>
 		<cobertura.version>2.7</cobertura.version>
+		<coveralls.version>4.3.0</coveralls.version>
 		<pitest.mutator>DEFAULTS</pitest.mutator>
 	</properties>
 
@@ -52,6 +53,19 @@
 						<mutator>${pitest.mutator}</mutator>
 					</mutators>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>${cobertura.version}</version>
+				<configuration>
+					<format>xml</format>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>${coveralls.version}</version>
 			</plugin>
 		</plugins>
 	</build>
