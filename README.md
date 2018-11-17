@@ -25,7 +25,7 @@ Why do we need Mutation Testing?
 
 To demonstrate, do the following:
 * Run `mvn clean site` on the project.
-* Open the code coverage report (`target/site/cobertura/index.html`).  All branch coverage is 100%.
+* Open the code coverage report (`target/site/jacoco/index.html`).  All branch coverage is 100%.
 * Open the `SimpleNumberIsPositiveTest.java` unit test.  You will see that it only has tests for positive and negative numbers, but there is no test for 0 (that test is currently commented out).
 * This means that if the condition in `SimpleNumber.isPositive()` method is accidentially changed from `>=` to `>`, there is no test that would catch that.
 
@@ -88,7 +88,7 @@ Add the `pitest-maven` plugin to your `pom.xml` file:
 <plugin>
     <groupId>org.pitest</groupId>
     <artifactId>pitest-maven</artifactId>
-    <version>1.1.11</version>
+    <version>1.4.3</version>
 </plugin>
 ```
 Now run the plugin on your project:
