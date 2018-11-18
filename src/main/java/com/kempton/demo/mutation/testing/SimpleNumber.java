@@ -13,10 +13,7 @@ public class SimpleNumber {
 	}
 
 	public boolean isPositive() {
-		if (value >= 0) {
-			return true;
-		}
-		return false;
+		return value >= 0;
 	}
 
 	public SimpleNumber increment(Incrememter incrememter) {
